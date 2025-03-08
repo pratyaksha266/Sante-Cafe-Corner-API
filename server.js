@@ -35,6 +35,11 @@ transporter.verify((error, success) => {
     }
 });
 
+
+app.get("/",(req,res)=>{
+    res.send("API Runnig Successfully")
+})
+
 // Route to Handle Form Submission
 app.post('/send', async (req, res) => {
     console.log("Received Data:", req.body); // Debugging
